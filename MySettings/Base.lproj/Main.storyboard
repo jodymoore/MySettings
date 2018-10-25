@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySettings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-Sh-Cxm">
+                                <rect key="frame" x="453" y="103" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zh7-y7-WCJ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-xk-UYo">
+                                <rect key="frame" x="453" y="141" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="73W-9v-3N1"/>
+                                </connections>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-7v-cWB">
+                                <rect key="frame" x="0.0" y="286" width="1112" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="-31570026.622979999">
+                                    <!--2000-01-01 14:32:53 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1925038800">
+                                    <!--1940-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="631105200">
+                                    <!--2020-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5I-Lh-DjO">
+                                <rect key="frame" x="539" y="541" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWm-Ev-3OS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-N3-hIZ">
+                                <rect key="frame" x="453" y="179" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7XN-dE-48O"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8za-B8-Qml">
+                                <rect key="frame" x="453" y="217" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="R7h-yV-hZb"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kSP-xk-UYo" firstAttribute="leading" secondItem="2LN-N3-hIZ" secondAttribute="leading" id="21E-1y-fif"/>
+                            <constraint firstItem="8za-B8-Qml" firstAttribute="centerX" secondItem="VcJ-7v-cWB" secondAttribute="centerX" id="3Cy-Sp-gbb"/>
+                            <constraint firstAttribute="trailing" secondItem="VcJ-7v-cWB" secondAttribute="trailing" id="4qT-kQ-Ymo"/>
+                            <constraint firstItem="6ha-Sh-Cxm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="453" id="6Rq-sX-ctr"/>
+                            <constraint firstItem="kSP-xk-UYo" firstAttribute="top" secondItem="6ha-Sh-Cxm" secondAttribute="bottom" constant="8" symbolic="YES" id="8FE-Qb-nf4"/>
+                            <constraint firstItem="VcJ-7v-cWB" firstAttribute="centerX" secondItem="d5I-Lh-DjO" secondAttribute="centerX" id="8c8-4b-al5"/>
+                            <constraint firstItem="kSP-xk-UYo" firstAttribute="trailing" secondItem="2LN-N3-hIZ" secondAttribute="trailing" id="CBZ-o5-oTL"/>
+                            <constraint firstItem="2LN-N3-hIZ" firstAttribute="trailing" secondItem="8za-B8-Qml" secondAttribute="trailing" id="F6B-t0-Nga"/>
+                            <constraint firstItem="VcJ-7v-cWB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GNf-cM-Br9"/>
+                            <constraint firstItem="2LN-N3-hIZ" firstAttribute="leading" secondItem="8za-B8-Qml" secondAttribute="leading" id="I1r-Oe-pr3"/>
+                            <constraint firstItem="6ha-Sh-Cxm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="PHQ-Vh-47f"/>
+                            <constraint firstItem="6ha-Sh-Cxm" firstAttribute="trailing" secondItem="kSP-xk-UYo" secondAttribute="trailing" id="SgW-4C-f0y"/>
+                            <constraint firstItem="d5I-Lh-DjO" firstAttribute="top" secondItem="VcJ-7v-cWB" secondAttribute="bottom" constant="39" id="Xf3-sR-cFI"/>
+                            <constraint firstItem="8za-B8-Qml" firstAttribute="top" secondItem="2LN-N3-hIZ" secondAttribute="bottom" constant="8" symbolic="YES" id="ZEx-JF-tdc"/>
+                            <constraint firstItem="2LN-N3-hIZ" firstAttribute="top" secondItem="kSP-xk-UYo" secondAttribute="bottom" constant="8" symbolic="YES" id="f3V-RL-s0d"/>
+                            <constraint firstItem="6ha-Sh-Cxm" firstAttribute="leading" secondItem="kSP-xk-UYo" secondAttribute="leading" id="fcD-08-C2Y"/>
+                            <constraint firstItem="VcJ-7v-cWB" firstAttribute="top" secondItem="8za-B8-Qml" secondAttribute="bottom" constant="39" id="p1N-PM-zRI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datepicker" destination="VcJ-7v-cWB" id="IOA-62-gEQ"/>
+                        <outlet property="txtEmail" destination="kSP-xk-UYo" id="9RD-79-9L5"/>
+                        <outlet property="txtFullName" destination="6ha-Sh-Cxm" id="xL1-EY-v62"/>
+                        <outlet property="txtPhone" destination="8za-B8-Qml" id="Pbc-9f-f2A"/>
+                        <outlet property="txtUserName" destination="2LN-N3-hIZ" id="mew-aO-HK8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.62589928057554" y="118.70503597122303"/>
+        </scene>
+    </scenes>
+</document>
